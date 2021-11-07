@@ -17,11 +17,11 @@
   <div class="container">
   
     <center>
+
      <h3 class="btn btn-success heading" >Emoji Converter
      <br>
 
-      <span>
-        &#128522;</span>
+      <span>&#128522;</span>
       <span>&#128512;</span>
       <span>&#128532;</span>
       <span>&#128546;</span>
@@ -30,6 +30,8 @@
 
      </h3>
       <br><br>
+
+
 
       <p style="font-size: 22px;">Take your selfie to generate emoji
       	<br>
@@ -41,35 +43,39 @@
         <br>
       </p>
 
-     <div class="clo-md-4 col-sm-12 col-xs-12">
+
+     <div class="col-md-4 col-sm-12 col-xs-12">
   
        <label>Camera:-</label>
-       <div id="cam"></div>
+       <div id="camera"></div>
        <br><br>
         <button onclick="capture()" class="btn btn-info">Capture</button>    
     </div>
     
+
     
     <div class="col-md-4 col-sm-12 col-xs-12">
       <label>First Prediction:</label>
-      <p class="emotion 1" id="emotion name"></p>
-      <p class="emoji" id="result_emoji"></p>
+      <p class="emotion_name" id="result_emotion_name"></p>
+      <p class="emoji" id="update_emoji"></p>
 
       <label >Second Prediction</label>
-      <p class="emotion 2" id="emotion name2"></p>
-      <p class="emoji" id="result_emoji2"></p>
+      <p class="emotion_name" id="result_emotion_name2"></p>
+      <p class="emoji" id="update_emoji"> </p>
     </div>
 
-      <div class="col-md-4 col-sm-12 col-xs-12">
+
+    <div class="col-md-4 col-sm-12 col-xs-12">
 
 	      <label>Snapshot - </label>
 
-        <div id="output"></div>
+        <div id="result"></div>
 
         <br><br>
        
         <button class="btn btn-danger" onclick="predict()">Predict</button>
       </div>
+
 
     </center>
 
